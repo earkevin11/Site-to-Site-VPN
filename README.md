@@ -54,4 +54,12 @@
 
 <p/>
 
+# Create a site to site connection on the Virtual Network Gateway and link the local network gateway
+- Navigate to the virtual network gateway > connections > add > select site-to-site connection and link the local network gateway that was created
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170848855-b1113d49-d50b-40dc-ae95-96b5ad51cca3.png" height="40%" width="40%" alt="review of vnets and VMs"/>
+
+<p/>
+
 
