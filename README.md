@@ -131,6 +131,14 @@
 
 <p/>
 
-# We can also set up a peering connection to a virtual network and companyvm can still access it
-- We're not going to to the demo.
+# Admins can also set up a peering connection where between two virtual networks and an on-prem site companyvm can still access it
+- See the two virtual networks that have a peering connection
+- Companyvm can access resources from both virtual networks
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170850443-73be77a6-484b-459a-9061-d66de80bdbbf.png" height="150%" width="150%" alt="review of vnets and VMs"/>
+
+<p/>
+
+
 
