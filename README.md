@@ -63,3 +63,15 @@
 <p/>
 
 
+# Configure the routing service on the simulated company setup
+- Scroll to the right hand corner and open the getting started wizard 
+- Select deploy VPN only > right click on companyvm > configure and enable routing and remote access > custom configuration > demand-dial connection and LAN routing 
+- Start the service
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170848916-b65520f6-0bb9-4cd1-ae5d-c0acffc59f79.png" height="40%" width="40%" alt="review of vnets and VMs"/>
+
+<p/>
+
+
+
