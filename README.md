@@ -67,11 +67,70 @@
 - Scroll to the right hand corner and open the getting started wizard 
 - Select deploy VPN only > right click on companyvm > configure and enable routing and remote access > custom configuration > demand-dial connection and LAN routing 
 - Start the service
+
 <p align="center">
   
-<img src="https://user-images.githubusercontent.com/104326475/170848916-b65520f6-0bb9-4cd1-ae5d-c0acffc59f79.png" height="40%" width="40%" alt="review of vnets and VMs"/>
+<img src="https://user-images.githubusercontent.com/104326475/170848916-b65520f6-0bb9-4cd1-ae5d-c0acffc59f79.png" height="80%" width="80%" alt="review of vnets and VMs"/>
 
 <p/>
 
+- Click on Network Interface 
+- Right click and create a new demand-dial interface > call it Azure > select IKE2 
 
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170848916-b65520f6-0bb9-4cd1-ae5d-c0acffc59f79.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+- User will be prompted to give a IP address > add the public IP address of the virtual network gateway created
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849324-0c652b88-2847-49a7-9293-a352c56af6a9.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+# Now admins must give information about the azure side similar to how we input all of the companyvm info into the local gateway
+- Admins must add routing details
+- Refer to udemy video #113
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849443-b841e703-7829-4948-981e-5a6afe70b5ee.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+- Take the address space of the virtual network created for point-to-site vm, which is 10.0.0.0/16
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849404-339918a0-b96e-46cd-9e8b-35770025a3cf.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+# Right click on the Azure NIC created and click on properties > security > preshare key for authentication and enter abc123 (key that you created)
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849467-a28fb91f-617e-48c1-a568-e4ac784abdf5.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+- See that it is now connected
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849474-04a45047-f7f3-4561-b940-2df91302d9c2.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+# Navigate within companyvm to the point-to-sitevm's private ip address
+- 10.0.0.4/vpn%20connection%20point%20to%20site.html
+- ^ Remember, this is the HTML page that you created
+- There is a successful site-to-site connection once users can reach the private IP webpage
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/170849510-003e4e84-27ae-4c2a-af76-aa9417fd219d.png" height="80%" width="80%" alt="review of vnets and VMs"/>
+
+<p/>
+
+# We can also set up a peering connection to a virtual network and companyvm can still access it
+- We're not going to to the demo.
 
